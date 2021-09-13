@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val msg = findViewById<TextView>(R.id.textView)
+        val msg = findViewById<TextView>(R.id.textView) // assign TextView from xml
         val btn = findViewById<Button>(R.id.button) // assign button from xml
-        btn.setOnClickListener{msg.text  = "You clicked the button"}
+        btn.setOnClickListener{msg.text  = "You clicked the button"} // changes TextView
         // btn.setOnClickListener({v, -> (v as Button).text = "You clicked the button"})
 
         /* val click = object : View.OnClickListener // create OCL
